@@ -1,0 +1,66 @@
+# ✅ Daily Routine Manager
+
+A simple web app for keeping track of your daily routine and personal tasks. Add tasks, view your list, and delete tasks when you’re done.
+
+## Features
+
+- Add a new task
+- View all saved tasks
+- Delete a task
+- Save tasks in a local JSON file
+- Built with Python and Streamlit
+
+## Technologies Used
+
+- **Python** — app logic
+- **Streamlit** — web app interface
+- **JSON** — local task storage
+
+## Project Files
+
+```text
+.
+├── app.py
+├── requirements.txt
+├── my_routine.json
+└── README.md
+```
+
+- `app.py` — the Streamlit application
+- `requirements.txt` — Python dependencies needed to run the app
+- `my_routine.json` — task data file; the app can create it when tasks are saved
+- `README.md` — project description and setup guide
+
+## Run the App Locally
+
+1. Install Python.
+2. Download or clone this repository.
+3. Open a terminal in the project folder.
+4. Install the required package:
+
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+5. Start the app:
+
+   ```bash
+   python -m streamlit run app.py
+   ```
+
+6. Open the local URL shown in the terminal, usually `http://localhost:8501`.
+
+## Deploy on Streamlit Community Cloud
+
+1. Push `app.py` and `requirements.txt` to a GitHub repository.
+2. Sign in to [Streamlit Community Cloud](https://share.streamlit.io/) using GitHub.
+3. Create an app and select this repository, its branch, and `app.py` as the main file.
+4. Deploy the app.
+
+## Task Data
+
+Tasks are stored in `my_routine.json` beside the app. On a hosted service, local files may not be permanent, so task changes may not be retained after the app restarts or redeploys.
+
+## Author
+
+Created as a personal task manager project.
